@@ -18,4 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [RunewordController::class, 'calculator'])->name('runeword.calculator');
 Route::get('/runewords', [RunewordController::class, 'index'])->name('runeword.index');
 Route::get('/runes', [RuneController::class, 'index'])->name('rune.index');
+Route::get('/backup', [RuneController::class, 'backup'])->name('backup');
 
