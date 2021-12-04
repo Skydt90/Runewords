@@ -10,6 +10,7 @@ class RunewordController extends Controller
     public function index()
     {
         $runewords = Runeword::orderBy('level', 'asc')
+            ->with('runes')
             ->get()
             ->map(function ($runeword) {
                 $attr = explode('|', $runeword->attributes);

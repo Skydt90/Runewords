@@ -2213,6 +2213,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     runewords: {
@@ -38089,6 +38094,20 @@ var render = function() {
             _c("p", { staticClass: "font-semibold" }, [
               _vm._v(_vm._s(runeword.combination))
             ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "flex flex-column" },
+              _vm._l(runeword.runes, function(rune) {
+                return _c("div", { key: rune.id }, [
+                  _c("img", {
+                    staticClass: "rounded-md h-10 w-10",
+                    attrs: { src: rune.image, alt: "" }
+                  })
+                ])
+              }),
+              0
+            ),
             _vm._v(" "),
             _c("p", { staticClass: "font-semibold" }, [
               _vm._v("Level: " + _vm._s(runeword.level))
