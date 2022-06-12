@@ -7,12 +7,7 @@ use Illuminate\Database\Seeder;
 
 class RuneSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
-    public function run()
+    public function run(): void
     {
         Rune::factory()->el()->create();
         Rune::factory()->eld()->create();

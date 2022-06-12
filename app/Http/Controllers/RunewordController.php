@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Rune;
 use App\Models\Runeword;
+use Illuminate\View\View;
 
 class RunewordController extends Controller
 {
-    public function index()
+    public function index(): View
     {
         $runewords = Runeword::orderBy('level', 'asc')
             ->with('runes')
@@ -19,17 +20,16 @@ class RunewordController extends Controller
                 $runeword->attributes = $attr;
 
                 return $runeword;
-        });
+            });
 
         return view('runewords.index', ['runewords' => $runewords]);
     }
 
-    public function calculator()
+    public function calculator(): View
     {
-        $runewords = Runeword::with(['runes' => function ($query) {
-            return $query->select('runes.id');
-        }])->get()
-            ->map(function($rWord) {
+        $runewords = Runeword::with(['runes' => fn ($query) => $query->select('runes.id')])
+            ->get()
+            ->map(function ($rWord) {
 
                 $runes = $rWord->runes->pluck('id')->toArray();
                 $attr = explode('|', $rWord->attributes);

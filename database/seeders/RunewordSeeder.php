@@ -7,11 +7,6 @@ use Illuminate\Database\Seeder;
 
 class RunewordSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         Runeword::factory()->breathOfTheDying()->create();
@@ -92,5 +87,12 @@ class RunewordSeeder extends Seeder
         Runeword::factory()->malice()->create();
         Runeword::factory()->nadir()->create();
         Runeword::factory()->steel()->create();
+        Runeword::factory()->pattern()->create();
+        Runeword::factory()->unbendingWill()->create();
+        Runeword::factory()->wisdom()->create();
+        Runeword::factory()->flickeringFlame()->create();
+        Runeword::factory()->mist()->create();
+        Runeword::factory()->plague()->create();
+        Runeword::factory()->obsession()->create();
     }
 }

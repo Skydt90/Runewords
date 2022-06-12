@@ -36,7 +36,7 @@ class RunewordFactory extends Factory
             'level' => 67,
             'attributes' => "25% Chance To Cast Level 17 Fire Wall When Struck | Level 16-20 Concentration Aura When Equipped (varies) | 260-300% Bonus To Attack Rating (varies) | +(1*Clvl)% Damage To Demons (Based on Character Level) | Adds 50-280 Lightning Damage | 20% Deadly Strike | Hit Blinds Target | Freezes Target +3 | +10 To Vitality | Replenish Life +8 | (1.875*Clvl)% Extra Gold From Monsters (Based on Character Level)",
             'item_type' => 'Polearms',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -84,7 +84,7 @@ class RunewordFactory extends Factory
             'level' => 65,
             'attributes' => "6% Chance To Cast Level 11 Fade When Struck | 10% Chance To Cast Level 18 Life Tap On Striking | 20% Chance To Cast Level 20 Charged Bolt On Attack | Level 17 Might Aura When Equipped | +330-375% Enhanced Damage (varies) | Ignore Target's Defense | 60-70% Chance of Crushing Blow (varies) | Prevent Monster Heal | Hit Blinds Target | (0.5*Clvl)% Chance of Getting Magic Items (Based on Character Level)",
             'item_type' => 'Axes, Hammers & Swords',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -96,7 +96,7 @@ class RunewordFactory extends Factory
             'level' => 65,
             'attributes' => "23% Chance To Cast Level 12 Volcano On Striking | 5% Chance To Cast Level 23 Molten Boulder On Striking | 100% Chance To Cast level 45 Meteor When You Die | 15% Chance To Cast Level 22 Nova On Attack | +350% Enhanced Damage | Ignore Target's Defense | Adds 100-180 Magic Damage | 7% Mana Stolen Per Hit | 20% Chance Of Crushing Blow | 20% Deadly Strike | Prevent Monster Heal | +10 To Dexterity",
             'item_type' => 'Polearms & Swords',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -120,7 +120,7 @@ class RunewordFactory extends Factory
             'level' => 65,
             'attributes' => "BOTH: | 100% Chance To Cast level 40 Blaze When You Level-up | 40% Chance To Cast Level 22 Firestorm On Striking | Level 10-15 Redemption Aura When Equipped (varies) | +350-400% Enhanced Damage (varies) | -28% To Enemy Fire Resistance | +350-400 Defense Vs. Missile (varies) | +15-21 Fire Absorb (varies) | WEAPONS: | Ignores Target's Defense | 14% Mana Stolen Per Hit | 20% Deadly Strike | SHIELDS: | +50 To Life | +5% To Maximum Lightning Resist | +10% To Maximum Fire Resist",
             'item_type' => 'Weapons & Shields',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -132,7 +132,7 @@ class RunewordFactory extends Factory
             'level' => 65,
             'attributes' => "35% Chance To Cast Level 14 Amplify Damage When Struck | 100% Chance To Cast Level 18 Bone Spear On Striking | Fires Explosive Arrows or Bolts (15) | +260-340% Enhanced Damage (varies) | Ignore Target's Defense | 20% Bonus to Attack Rating | +280-330% Damage To Demons (varies) | 20% Deadly Strike | Prevent Monster Heal | Knockback",
             'item_type' => 'Missile Weapons',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -144,7 +144,7 @@ class RunewordFactory extends Factory
             'level' => 65,
             'attributes' => "Level 12-15 Fanaticism Aura When Equipped (varies) | +1-2 To All Skills (varies) | +330% Enhanced Damage | Ignore Target's Defense | 300% Bonus To Attack Rating | +75% Damage To Undead | +50 To Attack Rating Against Undead | +120 Fire Damage | All Resistances +15 | 10% Reanimate As: Returned | 75% Extra Gold From Monsters",
             'item_type' => 'Missile Weapons',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -180,7 +180,7 @@ class RunewordFactory extends Factory
             'level' => 65,
             'attributes' => "BOTH: | 10% Chance To Cast Level 15 Confuse When Struck | Level 15 Holy Shock Aura When Equipped | +20-30% Faster Hit Recovery (varies) | +30% Enhanced Defense | +150-220 Defense (varies) | +10 To Vitality | +(0.625*Clvl) To Mana (Based On Character Level) | All Resistances +5-20 (varies) | 12-25% Better Chance of Getting Magic Items (varies) | HEADGEAR: | Increase Maximum Life 5% | SHIELDS: | +50 To Life",
             'item_type' => 'Headgear, Shields',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -192,7 +192,7 @@ class RunewordFactory extends Factory
             'level' => 65,
             'attributes' => "100% Chance To Cast Level 40 Blizzard When You Level-up | 25% Chance To Cast Level 22 Frost Nova On Striking | Level 18 Holy Freeze Aura When Equipped | +20% Increased Attack Speed | +140-210% Enhanced Damage (varies) | Ignore Target's Defense | +25-30% To Cold Skill Damage (varies) | 7% Life Stolen Per Hit | -20% To Enemy Cold Resistance | 20% Deadly Strike | (3.125*Clvl)% Extra Gold From Monsters (Based on Character Level)",
             'item_type' => 'Missile Weapons',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -204,7 +204,7 @@ class RunewordFactory extends Factory
             'level' => 63,
             'attributes' => "50% Chance To Cast Level 20 Chain Lightning When You Kill An Enemy | Level 12 Conviction Aura When Equipped | +35% Faster Run/Walk | +255-325% Enhanced Damage (varies) | -(45-55)% To Enemy Lightning Resistance (varies) | 40% Chance of Crushing Blow | Prevent Monster Heal | +(0.5*Clvl) To Vitality (Based on Character Level) | 30% Better Chance of Getting Magic Items | Level 21 Cyclone Armor (30 Charges)",
             'item_type' => 'Polearms',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -240,7 +240,7 @@ class RunewordFactory extends Factory
             'level' => 63,
             'attributes' => "30% Chance To Cast Level 1 Decrepify On Striking | 5% Chance To Cast Level 10 Life Tap On Striking | +375% Damage To Demons | +100 To Attack Rating Against Demons | +250-300% Damage To Undead (varies) | Adds 85-120 Magic Damage | Adds 41-240 Lightning Damage | 20% Chance of Crushing Blow | Prevent Monster Heal | +10 To Energy | Cannot Be Frozen",
             'item_type' => 'Missile Weapons',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -252,7 +252,7 @@ class RunewordFactory extends Factory
             'level' => 61,
             'attributes' => "BOTH: | 20% Chance to Cast Level 18 Venom When Struck | 12% Chance To Cast Level 15 Hydra On Striking | Level 14 Holy Fire Aura When Equipped | +360 Defense | +230 Defense Vs. Missile | +3-5 To All Attributes (varies) | +(0.375*Clvl) To Strength (Based on Character Level) | +5% To Maximum Lightning Resist | Damage Reduced by 7 | ARMOR: | Increase Maximum Mana 5% | SHIELDS: | +50 To Mana",
             'item_type' => 'Armor, Shields',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -288,7 +288,7 @@ class RunewordFactory extends Factory
             'level' => 59,
             'attributes' => "35% Chance To Cast Level 15 Venom On Striking | +30-40% Increased Attack Speed (varies) | Damage +340-400 (varies) | Ignore Target's Defense | -25% Target Defense | +(1.875*Clvl)% Damage To Demons (Based on Character Level) | Adds 5-30 Fire Damage | -20-25% To Enemy Poison Resistance (varies) | 20% Deadly Strike | Prevent Monster Heal | +2 To Mana After Each Kill | +10-15 Life After Each Kill (varies)",
             'item_type' => 'Swords & Axes',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -300,7 +300,7 @@ class RunewordFactory extends Factory
             'level' => 59,
             'attributes' => "BOTH: | 20% Chance To Cast Level 15 Chilling Armor when Struck | +25% Faster Cast Rate | +300% Enhanced Damage | +200% Enhanced Defense | +((8-12)*0.125*Clvl) To Life (Based on Character Level) (varies) | All Resistances +25-30 (varies) | 12% Damage Taken Goes To Mana | +1 To Light Radius | WEAPONS: | +9 To Minimum Damage | +50 To Attack Rating | 20% Deadly Strike | Hit Causes Monster To Flee 25% | ARMOR: | +15 Defense | Replenish Life +7 | +5% To Maximum Lightning Resist | Damage Reduced By 7",
             'item_type' => 'Weapons & Armor',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -348,7 +348,7 @@ class RunewordFactory extends Factory
             'level' => 55,
             'attributes' => "Indestructible | 100% Chance To Cast Level 44 Chain Lightning When You Die | 25% Chance To Cast Level 18 Glacial Spike On Attack | +300-385% Enhanced Damage (varies) | 20% Bonus To Attack Rating | +50 To Attack Rating | Adds 1-50 Lightning Damage | 7% Mana Stolen Per Hit | 50% Chance of Crushing Blow | (0.5*Clvl)% Deadly Strike (Based on Character Level) | +1 To Light Radius | Level 22 Blood Golem (15 Charges) | Requirements -20%",
             'item_type' => 'Swords & Axes',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -396,7 +396,7 @@ class RunewordFactory extends Factory
             'level' => 53,
             'attributes' => "20% Chance To Cast Level 16 Tornado On Striking | 16% Chance To Cast Level 21 Frozen Orb On Attack | 20% Bonus To Attack Rating | Adds 160-250 Magic Damage | Adds 60-180 Fire Damage | +5-10 To All Attributes (varies) | +10 To Dexterity | 38% Damage Taken Goes To Mana | 75% Extra Gold From Monsters | Level 15 Iron Maiden (40 Charges) | Requirements -20%",
             'item_type' => 'Polearms & Scepters',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -432,7 +432,7 @@ class RunewordFactory extends Factory
             'level' => 59,
             'attributes' => "Indestructible | 30% Chance To Cast Level 20 Bone Spirit On Striking | +50% Increased Attack Speed | +210-340% Enhanced Damage (varies) | +75% Damage To Demons | +100 To Attack Rating Against Demons | Prevent Monster Heal | +10 To Energy | +10-15 Magic Absorb (varies) | Level 16 Heart of Wolverine (20 Charges) | Level 17 Iron Golem (14 Charges)",
             'item_type' => 'Axes, Maces & Swords',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -564,7 +564,7 @@ class RunewordFactory extends Factory
             'level' => 43,
             'attributes' => "20% Chance To Cast Level 15 Decrepify On Striking | Level 16-18 Sanctuary Aura When Equipped (varies) | -50% Target Defense | Adds 150-210 Fire Damage | Adds 130-180 Cold Damage | 7% Life Stolen Per Hit | Slain Monsters Rest In Peace | +200-250 Defense Vs. Missile (varies) | +10 To Dexterity | 75% Extra Gold From Monsters",
             'item_type' => 'Hammers, Scepters & Swords',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -588,7 +588,7 @@ class RunewordFactory extends Factory
             'level' => 43,
             'attributes' => "15% Chance To Cast Level 13 Frozen Orb On Striking | 18% Chance To Cast Level 20 Ice Blast On Striking | +50 To Attack Rating | +220-350% Damage To Demons (varies) | +355-375% Damage To Undead (varies) | +50 To Attack Rating Against Undead | Adds 100-220 Cold Damage | -24% To Enemy Cold Resistance | +10 To Dexterity | Cannot Be Frozen | 75% Extra Gold From Monsters | +1 To Light Radius",
             'item_type' => 'Maces & Swords',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -624,7 +624,7 @@ class RunewordFactory extends Factory
             'level' => 41,
             'attributes' => "30% Chance To Cast Level 21 Enchant When You Kill An Enemy | +40% Faster Hit Recovery | +370% Enhanced Damage | -25% Target Defense | Adds 3-14 Cold Damage (3 Seconds Duration,Normal) | -25% To Enemy Fire Resistance | 40% Chance of Crushing Blow | +200-300 Defense (varies) | +10 To Strength | +10 To Dexterity | All Resistances +20-30 (varies) | Requirements -20%",
             'item_type' => 'Polearms',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -660,7 +660,7 @@ class RunewordFactory extends Factory
             'level' => 39,
             'attributes' => "Level 10 Vigor Aura When Equipped | +200-275% Enhanced Damage (varies) | +9 To Minimum Damage | +9 To Maximum Damage | Adds 55-160 Fire Damage | Adds 55-160 Lightning Damage | Adds 55-160 Cold Damage | +2-6 To Valkyrie (varies) | +10 To Dexterity | Regenerate Mana 20% | +2 To Mana After Each Kill | +2 To Light Radius | Level 20 Revive (25 Charges)",
             'item_type' => 'Missile Weapons',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -792,7 +792,7 @@ class RunewordFactory extends Factory
             'level' => 27,
             'attributes' => "Level 12-17 Meditation Aura When Equipped (varies) | +35% Faster Cast Rate | +200-260% Enhanced Damage (varies) | +9 To Minimum Damage | 180-250% Bonus to Attack Rating (varies) | Adds 5-30 Fire Damage | +75 Poison Damage Over 5 Seconds | +1-6 To Critical Strike (varies) | +5 To All Attributes | +2 To Mana After Each Kill | 23% Better Chance of Getting Magic Items",
             'item_type' => 'Polearms & Staves',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -816,7 +816,7 @@ class RunewordFactory extends Factory
             'level' => 25,
             'attributes' => "BOTH: | +2 To All Skills | +25-35% Faster Cast Rate (varies) | +55% Faster Hit Recovery | +250 Defense Vs. Missile | +22 To Vitality | +89-112 To Mana (varies) | +3-8 Magic Absorb (varies) | SHIELDS: | Cold Resist +35% | Lightning Resist +35% | Poison Resist +35% | Attacker Takes Damage of 14 | SWORDS: | Adds 1-50 Lightning Damage | Adds 3-14 Cold Damage (3 Sec,Normal) | +75 Poison Damage Over 5 Seconds | 7% Life Stolen Per Hit",
             'item_type' => 'Shields & Swords',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -840,7 +840,7 @@ class RunewordFactory extends Factory
             'level' => 25,
             'attributes' => "Level 15 Thorns Aura When Equipped | +35% Increased Attack Speed | +320-380% Damage To Demons (varies) | +280% Damage To Undead | +75 Poison Damage Over 5 Seconds | 7% Life Stolen Per Hit | Prevent Monster Heal | +5-10 To All Attributes (varies) | +2 To Mana After Each Kill | Reduces All Vendor Prices 15%",
             'item_type' => 'Missile Weapons',
-            'ladder_only' => 1
+            'ladder_only' => 0
         ]);
     }
 
@@ -949,6 +949,90 @@ class RunewordFactory extends Factory
             'attributes' => "+25% Increased Attack Speed | +20% Enhanced Damage | +3 to Minimum Damage | +3 to Maximum Damage | +50 to Attack Rating | 50% Chance of Open Wounds | +2 to Mana after each Kill | +1 to Light Radius",
             'item_type' => 'Swords, Axes, Maces',
             'ladder_only' => 0
+        ]);
+    }
+
+    public function pattern(): self
+    {
+        return $this->state([
+            'name' => 'Pattern',
+            'combination' => "Tal-Ort-Thul",
+            'level' => 23,
+            'attributes' => "+30% Faster Block Rate | +40%-80% Enhanced Damage (varies) | 10% Bonus to Attack Rating | Adds 17-62 Fire Damage | Adds 1-50 Lightning Damage | Adds 3-14 Cold Damage | +75 Poison Damage Over 5 Seconds | +6 to Strength | +6 to Dexterity | All Resistances +15",
+            'item_type' => 'Claws',
+            'ladder_only' => 1
+        ]);
+    }
+
+    public function unbendingWill(): self
+    {
+        return $this->state([
+            'name' => 'Unbending Will',
+            'combination' => "Fal-Io-Ith-Eld-El-Hel",
+            'level' => 41,
+            'attributes' => "18% Chance to cast Level 18 Taunt on striking | +3 To Combat Skills (Barbarian Only) | +20%-30% Increased Attack Speed (varies) | +300%-350% Enhanced Damage (varies) | +9 To Maximum Damage | +50 To Attack Rating | +75% Damage to Undead | +50 Attack Rating Against Undead | 8-10% Life Stolen Per Hit (varies) | Prevent Monster Heal | +10 To Strength | +10 To Vitality | Damage Reduced By 8 | +1 Light Radius | Requirements -20%",
+            'item_type' => 'Sword',
+            'ladder_only' => 1
+        ]);
+    }
+
+    public function wisdom(): self
+    {
+        return $this->state([
+            'name' => 'Wisdom',
+            'combination' => "Pul-Ith-Eld",
+            'level' => 45,
+            'attributes' => "+33% Piercing Attack | +15%-25% Bonus to Attack Rating (varies) | 4%-8% Mana Stolen Per Hit (varies) | +30% Enhanced Defense | +10 Energy | 15% Slower Stamina Drain | Cannot Be Frozen | +5 Mana After Each Kill | 15% Damage Taken Goes to Mana",
+            'item_type' => 'Headgear',
+            'ladder_only' => 1
+        ]);
+    }
+
+    public function flickeringFlame(): self
+    {
+        return $this->state([
+            'name' => 'Flickering Flame',
+            'combination' => "Nef-Pul-Vex",
+            'level' => 55,
+            'attributes' => "Level 4-8 Resist Fire Aura When Equipped (varies) | +3 To Fire Skills | -10-15% to Enemy Fire Resistance (varies) | +30% Enhanced Defense | +30 Defense Vs. Missile | +50-75 To Mana (varies) | Half Freeze Duration | +5% To Maximum Fire Resist | Poison Length Reduced by 50%",
+            'item_type' => 'Headgear',
+            'ladder_only' => 1
+        ]);
+    }
+
+    public function mist(): self
+    {
+        return $this->state([
+            'name' => 'Mist',
+            'combination' => "Cham-Shael-Gul-Thul-Ith",
+            'level' => 67,
+            'attributes' => "Level 8-12 Concentration Aura When Equipped (varies) | +3 To All Skills | 20% Increased Attack Speed | +100% Piercing Attack | +325-375% Enhanced Damage (varies) | +9 To Maximum Damage | 20% Bonus to Attack Rating | Adds 3-14 Cold Damage | All Resistances +40 | Freeze Target +3 | +24 Vitality",
+            'item_type' => 'Missile Weapons',
+            'ladder_only' => 1
+        ]);
+    }
+
+    public function plague(): self
+    {
+        return $this->state([
+            'name' => 'Plague',
+            'combination' => "Cham-Shael-Um",
+            'level' => 67,
+            'attributes' => "20% Chance to cast level 12 Lower Resist when struck | 25% Chance to cast level 15 Poison Nova on striking | Level 13-17 Cleansing Aura When Equipped (varies) | +1-2 All Skills | +20% Increased Attack Speed | +220-320% Enhanced Damage (varies) | -23% To Enemy Poison Resistance | 0.3% (0-29.7) Deadly Strike (Based on Character Level) | +25% Chance of Open Wounds | Freezes Target +3",
+            'item_type' => 'Claws, Daggers & Swords',
+            'ladder_only' => 1
+        ]);
+    }
+
+    public function obsession(): self
+    {
+        return $this->state([
+            'name' => 'Obsession',
+            'combination' => "Zod-Ist-Lem-Lum-Io-Nef",
+            'level' => 69,
+            'attributes' => "Indestructible | 24% Chance to cast level 10 Weaken when struck | +4 To All Skills | +65% Faster Cast Rate | +60% Faster Hit Recovery | Knockback | +10 To Vitality | +10 To Energy | Increase Maximum Life 15-25% (varies) | Regenerate Mana 15-30% (varies) | All Resistances +60-70 (varies) | 75% Extra Gold from Monsters | 30% Better Chance of Getting Magic Items",
+            'item_type' => 'Staves',
+            'ladder_only' => 1
         ]);
     }
 }

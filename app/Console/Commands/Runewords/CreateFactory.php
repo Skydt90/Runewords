@@ -2,31 +2,14 @@
 
 namespace App\Console\Commands\Runewords;
 
-use App\Models\Rune;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 
 class CreateFactory extends Command
 {
-    /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
     protected $signature = 'runeword:create-factory';
-
-    /**
-     * The console command description.
-     *
-     * @var string
-     */
     protected $description = 'Creates the factory class for Runewords based off a JSON file';
 
-    /**
-     * Execute the console command.
-     *
-     * @return int
-     */
     public function handle(): int
     {
         $factoryFile = 'database/factories/RunewordFactory.php';
@@ -90,6 +73,6 @@ class CreateFactory extends Command
 
         file_put_contents($factoryFile, $classSkeleton);
 
-        return 1;
+        return 0;
     }
 }
