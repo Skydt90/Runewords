@@ -1,22 +1,26 @@
 <template>
-    <div class="grid grid-cols-6">
+    <div class="grid grid-cols-4">
 
-        <div class="flex flex-col items-center pt-2 pb-2" v-for="(recipe) in rune_recipes">
+        <div class="flex items-center pt-2 pb-2" v-for="(recipe) in rune_recipes">
 
-            <p class="font-semibold">{{ recipe.name }}</p>
-            <div class="flex items-center">
+            <div class="title-image flex flex-col items-center">
+                <p class="font-semibold m-auto">{{ recipe.name }}</p>
                 <img :src="recipe.image" class="" alt="">
             </div>
 
-            <div class="flex flex-row mt-2" v-for="index in recipe.rune_count" :key="index">
-                <img :src="recipe.runes[0].image" class="object-scale-down h-10 w-10" alt="">
-                <img :src="recipe.runes[0].image" class="object-scale-down h-10 w-10" alt="">
-                <img :src="recipe.runes[0].image" class="object-scale-down h-10 w-10" alt="">
-                <img v-if="recipe.gem !== null" :src="recipe.gem.image" class="object-scale-down h-11 w-11" alt="">
+            <div class="content flex flex-row mt-4 items-center ml-2" v-for="index in recipe.rune_count" :key="index">
+
+                <div class="count-container flex items-center mt-2">
+                    <p>{{ recipe.rune_count }} x</p>
+                    <img :src="recipe.runes[0].image" class="object-scale-down h-10 w-10 ml-2" alt="">
+                </div>
+
+                <div v-if="recipe.gem !== null" class="gem flex items-center ml-2 mt-3">
+                    <p> + 1 x</p>
+                    <img :src="recipe.gem.image" class="object-scale-down h-10 w-10" alt="">
+                </div>
             </div>
-
         </div>
-
     </div>
 </template>
 

@@ -2114,6 +2114,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     rune_recipes: {
@@ -38091,45 +38095,54 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "grid grid-cols-6" },
+    { staticClass: "grid grid-cols-4" },
     _vm._l(_vm.rune_recipes, function(recipe) {
       return _c(
         "div",
-        { staticClass: "flex flex-col items-center pt-2 pb-2" },
+        { staticClass: "flex items-center pt-2 pb-2" },
         [
-          _c("p", { staticClass: "font-semibold" }, [
-            _vm._v(_vm._s(recipe.name))
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "flex items-center" }, [
+          _c("div", { staticClass: "title-image flex flex-col items-center" }, [
+            _c("p", { staticClass: "font-semibold m-auto" }, [
+              _vm._v(_vm._s(recipe.name))
+            ]),
+            _vm._v(" "),
             _c("img", { attrs: { src: recipe.image, alt: "" } })
           ]),
           _vm._v(" "),
           _vm._l(recipe.rune_count, function(index) {
             return _c(
               "div",
-              { key: index, staticClass: "flex flex-row mt-2" },
+              {
+                key: index,
+                staticClass: "content flex flex-row mt-4 items-center ml-2"
+              },
               [
-                _c("img", {
-                  staticClass: "object-scale-down h-10 w-10",
-                  attrs: { src: recipe.runes[0].image, alt: "" }
-                }),
-                _vm._v(" "),
-                _c("img", {
-                  staticClass: "object-scale-down h-10 w-10",
-                  attrs: { src: recipe.runes[0].image, alt: "" }
-                }),
-                _vm._v(" "),
-                _c("img", {
-                  staticClass: "object-scale-down h-10 w-10",
-                  attrs: { src: recipe.runes[0].image, alt: "" }
-                }),
+                _c(
+                  "div",
+                  { staticClass: "count-container flex items-center mt-2" },
+                  [
+                    _c("p", [_vm._v(_vm._s(recipe.rune_count) + " x")]),
+                    _vm._v(" "),
+                    _c("img", {
+                      staticClass: "object-scale-down h-10 w-10 ml-2",
+                      attrs: { src: recipe.runes[0].image, alt: "" }
+                    })
+                  ]
+                ),
                 _vm._v(" "),
                 recipe.gem !== null
-                  ? _c("img", {
-                      staticClass: "object-scale-down h-11 w-11",
-                      attrs: { src: recipe.gem.image, alt: "" }
-                    })
+                  ? _c(
+                      "div",
+                      { staticClass: "gem flex items-center ml-2 mt-3" },
+                      [
+                        _c("p", [_vm._v(" + 1 x")]),
+                        _vm._v(" "),
+                        _c("img", {
+                          staticClass: "object-scale-down h-10 w-10",
+                          attrs: { src: recipe.gem.image, alt: "" }
+                        })
+                      ]
+                    )
                   : _vm._e()
               ]
             )
