@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Rune;
-use Exception;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Support\Facades\Log;
+use App\Models\RuneRecipe;
+use Illuminate\View\View;
 
 class RuneController extends Controller
 {
-    public function index()
+    public function index(): View
     {
         $runes = Rune::all()->map(function ($rune) {
             $attr = explode('|', $rune->attributes);
@@ -23,31 +22,12 @@ class RuneController extends Controller
         return view('runes.index', ['runes' => $runes]);
     }
 
-    public function backup(): RedirectResponse
+    public function recipes(): View
     {
-        try {
-            $destination = 'C:\Users\Christian\Desktop\d2-backup';
-            $sourcePath = 'C:\Users\Christian\Saved Games\Diablo II Resurrected';
-            $sourceDir = opendir($sourcePath);
+        $runeRecipes = RuneRecipe::all();
 
-            if (!is_dir($destination)) {
-                mkdir($destination);
-            }
+        dd($runeRecipes);
 
-            while ($file = readdir($sourceDir) ) {
-
-                if ($file == '.' || $file == '..' ) continue;
-
-                copy("$sourcePath/$file", "$destination/$file");
-            }
-
-            closedir($sourceDir);
-        }
-        catch (Exception $e) {
-            Log::error($e);
-            return redirect()->back()->withErrors(['error' => 'Backup failed!']);
-        }
-
-        return redirect()->back()->with('success', 'Backup complete!');
+        return view('runes.recipes', ['runeRecipes' => $runeRecipes]);
     }
 }

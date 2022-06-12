@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BackupController;
 use App\Http\Controllers\RuneController;
 use App\Http\Controllers\RunewordController;
 use Illuminate\Support\Facades\Route;
@@ -15,8 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [RunewordController::class, 'calculator'])->name('runeword.calculator');
-Route::get('/runewords', [RunewordController::class, 'index'])->name('runeword.index');
-Route::get('/runes', [RuneController::class, 'index'])->name('rune.index');
-Route::get('/backup', [RuneController::class, 'backup'])->name('backup');
+Route::get('/', [RunewordController::class, 'calculator']);
+
+Route::controller(RunewordController::class)->prefix('runewords')->group(function () {
+    Route::get('/index', 'index')->name('runewords.index');
+    Route::get('/calculator', 'calculator')->name('runewords.calculator');
+});
+
+Route::controller(RuneController::class)->prefix('runes')->group(function () {
+    Route::get('/index', 'index')->name('runes.index');
+    Route::get('/recipes', 'recipes')->name('runes.recipes');
+});
+
+Route::get('/backup', [BackupController::class, 'backup'])->name('backup');
 
