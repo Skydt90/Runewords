@@ -22,7 +22,7 @@ class RuneFactory extends Factory
             'name' => 'El',
             'attributes' => 'Weapon: +50 to Attack Rating, +1 to Light Radius | Armor/Helm/Shield: +1 to Light Radius, +15 to Defence',
             'level' => 11,
-            'rune_recipe_id' => null,
+            'rune_recipe_id' => 1,
             'image' => '/storage/runes/el.png'
         ]);
     }
@@ -33,7 +33,7 @@ class RuneFactory extends Factory
             'name' => 'Eld',
             'attributes' => 'Weapon: +75% Damage vs. Undead, +50 Attack Rating vs. Undead | Armor/Helm: Lowers Stamina drain by 15% | Shield: +7% Blocking',
             'level' => 11,
-            'rune_recipe_id' => 1,
+            'rune_recipe_id' => 2,
             'image' => '/storage/runes/eld.png'
         ]);
     }
@@ -44,7 +44,7 @@ class RuneFactory extends Factory
             'name' => 'Tir',
             'attributes' => 'Weapon: +2 Mana Per Kill | Armor/Helm/Shield: +2 Mana Per Kill',
             'level' => 13,
-            'rune_recipe_id' => 2,
+            'rune_recipe_id' => 3,
             'image' => '/storage/runes/tir.png'
         ]);
     }
@@ -55,7 +55,7 @@ class RuneFactory extends Factory
             'name' => 'Nef',
             'attributes' => 'Weapon: Knockback | Armor/Helm/Shield: +30 Defense vs. Missile',
             'level' => 13,
-            'rune_recipe_id' => 3,
+            'rune_recipe_id' => 4,
             'image' => '/storage/runes/nef.png'
         ]);
     }
@@ -66,7 +66,7 @@ class RuneFactory extends Factory
             'name' => 'Eth',
             'attributes' => 'Weapon: -25% to Target Defense | Armor/Helm/Shield: Regenerate Mana 15%',
             'level' => 15,
-            'rune_recipe_id' => 4,
+            'rune_recipe_id' => 5,
             'image' => '/storage/runes/eth.png'
         ]);
     }
@@ -77,7 +77,7 @@ class RuneFactory extends Factory
             'name' => 'Ith',
             'attributes' => 'Weapon: +9 to Maximum Damage | Armor/Helm/Shield: 15% Damage Taken Goes to Mana',
             'level' => 15,
-            'rune_recipe_id' => 5,
+            'rune_recipe_id' => 6,
             'image' => '/storage/runes/ith.png'
         ]);
     }
@@ -88,7 +88,7 @@ class RuneFactory extends Factory
             'name' => 'Tal',
             'attributes' => 'Weapon: 75 Poison damage over 5 seconds | Armor/Helm: +30% Poison Resistance | Shield: +35% Poison Resistance',
             'level' => 17,
-            'rune_recipe_id' => 6,
+            'rune_recipe_id' => 7,
             'image' => '/storage/runes/tal.png'
         ]);
     }
@@ -99,7 +99,7 @@ class RuneFactory extends Factory
             'name' => 'Ral',
             'attributes' => 'Weapon: +5-30 Fire Damage | Armor/Helm: +30% Fire Resistance | Shield: +35% Fire Resistance',
             'level' => 19,
-            'rune_recipe_id' => 7,
+            'rune_recipe_id' => 8,
             'image' => '/storage/runes/ral.png'
         ]);
     }
@@ -110,7 +110,7 @@ class RuneFactory extends Factory
             'name' => 'Ort',
             'attributes' => 'Weapon: +1-50 Lightning Damage | Armor/Helm: +30% Lightning Resistance | Shield: +35% Lightning Resistance',
             'level' => 21,
-            'rune_recipe_id' => 8,
+            'rune_recipe_id' => 9,
             'image' => '/storage/runes/ort.png'
         ]);
     }
@@ -121,7 +121,7 @@ class RuneFactory extends Factory
             'name' => 'Thul',
             'attributes' => 'Weapon: +3-14 Cold Damage (Cold Length 3 seconds) | Armor/Helm: +30% Cold Resistance | Shield: +35% Cold Resistance',
             'level' => 23,
-            'rune_recipe_id' => 9,
+            'rune_recipe_id' => 10,
             'image' => '/storage/runes/thul.png'
         ]);
     }
@@ -132,7 +132,7 @@ class RuneFactory extends Factory
             'name' => 'Amn',
             'attributes' => 'Weapon: 7% Life Stolen Per Hit | Armor/Helm/Shield: Attacker takes 14 damage',
             'level' => 25,
-            'rune_recipe_id' => 10,
+            'rune_recipe_id' => 11,
             'image' => '/storage/runes/amn.png'
         ]);
     }
@@ -143,7 +143,7 @@ class RuneFactory extends Factory
             'name' => 'Sol',
             'attributes' => 'Weapon: +9 to Minimum Damage | Armor/Helm/Shield: -7 Damage Taken',
             'level' => 27,
-            'rune_recipe_id' => 11,
+            'rune_recipe_id' => 12,
             'image' => '/storage/runes/sol.png'
         ]);
     }
@@ -154,7 +154,7 @@ class RuneFactory extends Factory
             'name' => 'Shael',
             'attributes' => 'Weapon: Faster Attack Rate (+20) | Armor/Helm: Faster Hit Recovery (+20) | Shields: Faster Block Rate (+20)',
             'level' => 29,
-            'rune_recipe_id' => 12,
+            'rune_recipe_id' => 13,
             'image' => '/storage/runes/shael.png'
         ]);
     }
@@ -165,7 +165,7 @@ class RuneFactory extends Factory
             'name' => 'Dol',
             'attributes' => 'Weapon: 25% Chance that Hit Causes Monster to Flee | Armor/Helm/Shield: +7 Replenish Life',
             'level' => 31,
-            'rune_recipe_id' => 13,
+            'rune_recipe_id' => 14,
             'image' => '/storage/runes/dol.png'
         ]);
     }
@@ -176,7 +176,7 @@ class RuneFactory extends Factory
             'name' => 'Hel',
             'attributes' => 'Weapon: -20% Requirements | Armor/Helm/Shield: -15% Requirements',
             'level' => 33,
-            'rune_recipe_id' => 14,
+            'rune_recipe_id' => 15,
             'image' => '/storage/runes/hel.png'
         ]);
     }
@@ -187,7 +187,7 @@ class RuneFactory extends Factory
             'name' => 'Io',
             'attributes' => 'Weapon: +10 Vitality | Armor/Helm/Shield: +10 Vitality',
             'level' => 35,
-            'rune_recipe_id' => 15,
+            'rune_recipe_id' => 16,
             'image' => '/storage/runes/io.png'
         ]);
     }
@@ -198,7 +198,7 @@ class RuneFactory extends Factory
             'name' => 'Lum',
             'attributes' => 'Weapon: +10 Energy | Armor/Helm/Shield: +10 Energy',
             'level' => 37,
-            'rune_recipe_id' => 16,
+            'rune_recipe_id' => 17,
             'image' => '/storage/runes/lum.png'
         ]);
     }
@@ -209,7 +209,7 @@ class RuneFactory extends Factory
             'name' => 'Ko',
             'attributes' => 'Weapon: +10 Dexterity | Armor/Helm/Shield: +10 Dexterity',
             'level' => 39,
-            'rune_recipe_id' => 17,
+            'rune_recipe_id' => 18,
             'image' => '/storage/runes/ko.png'
         ]);
     }
@@ -220,7 +220,7 @@ class RuneFactory extends Factory
             'name' => 'Fal',
             'attributes' => 'Weapon: +10 Strength | Armor/Helm/Shield: +10 Strength',
             'level' => 41,
-            'rune_recipe_id' => 18,
+            'rune_recipe_id' => 19,
             'image' => '/storage/runes/fal.png'
         ]);
     }
@@ -231,7 +231,7 @@ class RuneFactory extends Factory
             'name' => 'Lem',
             'attributes' => 'Weapon: +75% Extra Gold from Monsters | Armor/Helm/Shield: +50% Extra Gold from Monsters',
             'level' => 43,
-            'rune_recipe_id' => 19,
+            'rune_recipe_id' => 20,
             'image' => '/storage/runes/lem.png'
         ]);
     }
@@ -242,7 +242,7 @@ class RuneFactory extends Factory
             'name' => 'Pul',
             'attributes' => 'Weapon: +75% Damage to Demons, +100 Attack Rating against Demons | Armor/Helm/Shield:+30% Defense',
             'level' => 45,
-            'rune_recipe_id' => 20,
+            'rune_recipe_id' => 21,
             'image' => '/storage/runes/pul.png'
         ]);
     }
@@ -253,7 +253,7 @@ class RuneFactory extends Factory
             'name' => 'Um',
             'attributes' => 'Weapon: 25% Chance of Open Wounds | Armor/Helm: +15% Resist All | Shields: +22% Resist All',
             'level' => 47,
-            'rune_recipe_id' => 21,
+            'rune_recipe_id' => 22,
             'image' => '/storage/runes/um.png'
         ]);
     }
@@ -264,7 +264,7 @@ class RuneFactory extends Factory
             'name' => 'Mal',
             'attributes' => 'Weapon: Prevent Monster Healing | Armor/Helm/Shield: Reduce Magic Damage by 7',
             'level' => 49,
-            'rune_recipe_id' => 22,
+            'rune_recipe_id' => 23,
             'image' => '/storage/runes/mal.png'
         ]);
     }
@@ -275,7 +275,7 @@ class RuneFactory extends Factory
             'name' => 'Ist',
             'attributes' => 'Weapon: +30% Better Chance of Finding Magical Items | Armor/Helm/Shield: +25% Better Chance of Finding Magical Items',
             'level' => 51,
-            'rune_recipe_id' => 23,
+            'rune_recipe_id' => 24,
             'image' => '/storage/runes/ist.png'
         ]);
     }
@@ -286,7 +286,7 @@ class RuneFactory extends Factory
             'name' => 'Gul',
             'attributes' => 'Weapon: +20% Attack Rating | Armor/Helm/Shield: +5 to Max Resist Poison',
             'level' => 53,
-            'rune_recipe_id' => 24,
+            'rune_recipe_id' => 25,
             'image' => '/storage/runes/gul.png'
         ]);
     }
@@ -297,7 +297,7 @@ class RuneFactory extends Factory
             'name' => 'Vex',
             'attributes' => 'Weapon: 7% Mana Leech | Armor/Helm/Shield: +5 to Max Fire Resist',
             'level' => 55,
-            'rune_recipe_id' => 25,
+            'rune_recipe_id' => 26,
             'image' => '/storage/runes/vex.png'
         ]);
     }
@@ -308,7 +308,7 @@ class RuneFactory extends Factory
             'name' => 'Ohm',
             'attributes' => 'Weapon: +50% Damage | Armor/Helm/Shield: +5 to Max. Resist Cold',
             'level' => 57,
-            'rune_recipe_id' => 26,
+            'rune_recipe_id' => 27,
             'image' => '/storage/runes/ohm.png'
         ]);
     }
@@ -319,7 +319,7 @@ class RuneFactory extends Factory
             'name' => 'Lo',
             'attributes' => 'Weapon: 20% Chance of Deadly Strike | Armor/Helm/Shield: +5 to Max. Resist Lightning',
             'level' => 59,
-            'rune_recipe_id' => 27,
+            'rune_recipe_id' => 28,
             'image' => '/storage/runes/lo.png'
         ]);
     }
@@ -330,7 +330,7 @@ class RuneFactory extends Factory
             'name' => 'Sur',
             'attributes' => 'Weapon: 20% Chance of Hit Blinds Target | Armor/Helm: +5% total Mana | Shields: +50 Mana',
             'level' => 61,
-            'rune_recipe_id' => 28,
+            'rune_recipe_id' => 29,
             'image' => '/storage/runes/sur.png'
         ]);
     }
@@ -341,7 +341,7 @@ class RuneFactory extends Factory
             'name' => 'Ber',
             'attributes' => 'Weapon: 20% Chance of Crushing Blow | Armor/Helm/Shield: Damage Reduced by 8%',
             'level' => 63,
-            'rune_recipe_id' => 29,
+            'rune_recipe_id' => 30,
             'image' => '/storage/runes/ber.png'
         ]);
     }
@@ -352,7 +352,7 @@ class RuneFactory extends Factory
             'name' => 'Jah',
             'attributes' => 'Weapon: Ignores Target Defense | Armor/Helm: +5% of total Hit Points | Shields: +50 Hit Points',
             'level' => 65,
-            'rune_recipe_id' => 30,
+            'rune_recipe_id' => 31,
             'image' => '/storage/runes/jah.png'
         ]);
     }
@@ -363,7 +363,7 @@ class RuneFactory extends Factory
             'name' => 'Cham',
             'attributes' => 'Weapon: 32% Chance of Hit Freezing Target for 3 seconds | Armor/Helm/Shield: Cannot be Frozen',
             'level' => 67,
-            'rune_recipe_id' => 31,
+            'rune_recipe_id' => 32,
             'image' => '/storage/runes/cham.png'
         ]);
     }
@@ -374,7 +374,7 @@ class RuneFactory extends Factory
             'name' => 'Zod',
             'attributes' => 'Weapon: Indestructible | Armor/Helm/Shield: Indestructible',
             'level' => 69,
-            'rune_recipe_id' => 32,
+            'rune_recipe_id' => null,
             'image' => '/storage/runes/zod.png'
         ]);
     }

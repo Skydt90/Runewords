@@ -15,7 +15,7 @@ class CreateGemsTable extends Migration
     {
         Schema::create('gems', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('rune_recipe_id');
+            $table->unsignedBigInteger('rune_recipe_id')->nullable();
             $table->string('name');
             $table->string('image');
 

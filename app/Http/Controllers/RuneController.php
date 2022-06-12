@@ -24,9 +24,11 @@ class RuneController extends Controller
 
     public function recipes(): View
     {
-        $runeRecipes = RuneRecipe::all();
+        $fields = ['id', 'rune_recipe_id', 'image'];
 
-        dd($runeRecipes);
+        $runeRecipes = RuneRecipe::with(['runes' => fn ($q) => $q->select($fields)])
+            ->with(['gem' => fn ($q) => $q->select($fields)])
+            ->get();
 
         return view('runes.recipes', ['runeRecipes' => $runeRecipes]);
     }

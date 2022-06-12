@@ -2096,8 +2096,35 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Recipe.vue"
+  props: {
+    rune_recipes: {
+      required: true,
+      name: String,
+      image: String,
+      rune_count: Number,
+      runes: [],
+      gem: []
+    }
+  }
 });
 
 /***/ }),
@@ -38062,7 +38089,57 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c(
+    "div",
+    { staticClass: "grid grid-cols-6" },
+    _vm._l(_vm.rune_recipes, function(recipe) {
+      return _c(
+        "div",
+        { staticClass: "flex flex-col items-center pt-2 pb-2" },
+        [
+          _c("p", { staticClass: "font-semibold" }, [
+            _vm._v(_vm._s(recipe.name))
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "flex items-center" }, [
+            _c("img", { attrs: { src: recipe.image, alt: "" } })
+          ]),
+          _vm._v(" "),
+          _vm._l(recipe.rune_count, function(index) {
+            return _c(
+              "div",
+              { key: index, staticClass: "flex flex-row mt-2" },
+              [
+                _c("img", {
+                  staticClass: "object-scale-down h-10 w-10",
+                  attrs: { src: recipe.runes[0].image, alt: "" }
+                }),
+                _vm._v(" "),
+                _c("img", {
+                  staticClass: "object-scale-down h-10 w-10",
+                  attrs: { src: recipe.runes[0].image, alt: "" }
+                }),
+                _vm._v(" "),
+                _c("img", {
+                  staticClass: "object-scale-down h-10 w-10",
+                  attrs: { src: recipe.runes[0].image, alt: "" }
+                }),
+                _vm._v(" "),
+                recipe.gem !== null
+                  ? _c("img", {
+                      staticClass: "object-scale-down h-11 w-11",
+                      attrs: { src: recipe.gem.image, alt: "" }
+                    })
+                  : _vm._e()
+              ]
+            )
+          })
+        ],
+        2
+      )
+    }),
+    0
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
