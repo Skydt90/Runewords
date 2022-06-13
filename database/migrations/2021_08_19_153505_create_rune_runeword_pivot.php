@@ -17,6 +17,7 @@ class CreateRuneRunewordPivot extends Migration
             $table->id();
             $table->unsignedBigInteger('rune_id');
             $table->unsignedBigInteger('runeword_id');
+            $table->unsignedSmallInteger('priority');
 
             $table->foreign('rune_id')->references('id')->on('runes')->cascadeOnDelete();
             $table->foreign('runeword_id')->references('id')->on('runewords')->cascadeOnDelete();

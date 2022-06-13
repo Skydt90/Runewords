@@ -18,7 +18,7 @@ class Runeword extends Model
 
     public function runes(): BelongsToMany
     {
-        return $this->belongsToMany(Rune::class, 'rune_runeword_pivot', 'runeword_id', 'rune_id');
+        return $this->belongsToMany(Rune::class, 'rune_runeword_pivot', 'runeword_id', 'rune_id')
+            ->withPivot('priority')->orderBy('priority');
     }
-
 }

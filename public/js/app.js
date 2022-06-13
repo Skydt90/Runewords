@@ -38306,7 +38306,7 @@ var render = function() {
               "div",
               { staticClass: "flex flex-column" },
               _vm._l(runeword.runes, function(rune) {
-                return _c("div", { key: rune.id }, [
+                return _c("div", { key: rune.priority }, [
                   _c("img", {
                     staticClass: "rounded-md h-10 w-10",
                     attrs: { src: rune.image, alt: "" }

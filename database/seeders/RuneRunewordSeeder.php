@@ -21,8 +21,12 @@ class RuneRunewordSeeder extends Seeder
             $runeIdsInOrder = [];
 
             # Fetch the ids for each rune in the correct order
-            foreach ($runeOrderNames as $name) {
-                $runeIdsInOrder[] = $runes->where('name', $name)->first()->id;
+            foreach ($runeOrderNames as $index => $name) {
+
+                $priority = $index + 1;
+                $id = $runes->where('name', $name)->first()->id;
+
+                $runeIdsInOrder[$id] = ['priority' => $priority];
             }
 
             $runeword->runes()->sync($runeIdsInOrder);

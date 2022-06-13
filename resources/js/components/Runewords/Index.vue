@@ -6,7 +6,7 @@
                 <h2 class="font-bold">{{ runeword.name }}</h2>
                 <p class="font-semibold">{{ runeword.combination }}</p>
                 <div class="flex flex-column">
-                    <div v-for="(rune) in runeword.runes" :key="rune.id">
+                    <div v-for="(rune) in runeword.runes" :key="rune.priority">
                         <img :src="rune.image" class="rounded-md h-10 w-10" alt="">
                     </div>
                 </div>

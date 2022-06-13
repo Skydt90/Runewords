@@ -16,10 +16,20 @@ class RunewordController extends Controller
                 ->with('runes')
                 ->get()
                 ->map(function ($runeword) {
+                    # Structure the attributes to be readable
                     $attr = explode('|', $runeword->attributes);
                     unset($runeword->attributes);
-
                     $runeword->attributes = $attr;
+
+                    # Make the rune priority visible to Vue
+                    $runes = $runeword->runes->map(function ($rune) {
+                        $rune->priority = $rune->pivot->priority;
+
+                        return $rune;
+                    });
+
+                    unset($runeword->runes);
+                    $runeword->runes = $runes;
 
                     return $runeword;
                 });
