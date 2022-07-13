@@ -15,7 +15,8 @@
                 <li><a href="{{ route('runewords.index') }}" class="hover:text-gray-400">Runewords</a></li>
                 <li><a href="{{ route('runes.recipes') }}" class="hover:text-gray-400">Rune Recipes</a></li>
                 <li><a href="{{ route('runes.index') }}" class="hover:text-gray-400">Runes</a></li>
-                <li><a href="{{ route('backup') }}" class="hover:text-gray-400">Backup local files</a></li>
+                <li><a href="{{ route('backup') }}" class="hover:text-gray-400">Backup Local Files</a></li>
+                <li><a href="{{ route('backup-to-source') }}" class="hover:text-gray-400">Copy Backup to Source</a></li>
             </ul>
         </nav>
         <div class="backup-message flex flex-col items-center">

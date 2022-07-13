@@ -28,5 +28,8 @@ Route::controller(RuneController::class)->prefix('runes')->group(function () {
     Route::get('/recipes', 'recipes')->name('runes.recipes');
 });
 
-Route::get('/backup', [BackupController::class, 'backup'])->name('backup');
+Route::controller(BackupController::class)->group(function () {
+    Route::get('/backup', [BackupController::class, 'backup'])->name('backup');
+    Route::get('/backup-to-source', [BackupController::class, 'moveBackupToSource'])->name('backup-to-source');
+});
 
