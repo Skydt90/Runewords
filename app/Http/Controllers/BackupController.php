@@ -11,8 +11,8 @@ class BackupController extends Controller
     public function backup(): RedirectResponse
     {
         try {
-            $destination = 'C:\Users\Christian\Desktop\d2-backup';
-            $sourcePath = 'C:\Users\Christian\Saved Games\Diablo II Resurrected';
+            $destination = 'C:\Users\Chris\Desktop\d2-backup';
+            $sourcePath = 'C:\Users\Chris\Saved Games\Diablo II Resurrected';
             $sourceDir = opendir($sourcePath);
 
             if (!is_dir($destination)) {
