@@ -39,8 +39,8 @@ class BackupController extends Controller
     public function moveBackupToSource(): RedirectResponse
     {
         try {
-            $destination = 'C:\Users\Christian\Saved Games\Diablo II Resurrected';
-            $sourcePath = 'C:\Users\Christian\Desktop\d2-backup';
+            $destination = 'C:\Users\Chris\Saved Games\Diablo II Resurrected';
+            $sourcePath = 'C:\Users\Chris\Desktop\d2-backup';
             $sourceDir = opendir($sourcePath);
 
             if (!is_dir($sourcePath)) {
